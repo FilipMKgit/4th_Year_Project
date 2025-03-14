@@ -101,11 +101,11 @@ Pathlib, OS, Joblib, Shutil, Re, Random, Warnings
 │── ├── ├──📈 stat_XGB.py                          # Computes accuracy, precision, recall and confusion matrix for XGB predictions
 │── ├── ├──📊 viz_RF_XGB.py                        # Generates plot for predicted RF and XGB clusters
 │── 🗑️ Bin                                         # Bin directory
-│── 📂 raw_data                                    # Contains raw files, i.e. starting point of project
-│── ├── ├──📂 fcsdata                              # Contains all FCS files imported from directly FlowJo
-│── ├── ├──📂 fcsdata_photo                        # Contains gated phototrophs CSV files imported directly from FlowJo
-│── ├── ├──📂 gates                                # Contains CSV files for phototrophs, Syn, Crypto, Nano1/2 and PEuk1/2
-│── ├── ├──📂 phototrophs                          # Cotains CSV phototroph files
+│── 📦 raw_data.zip                                # Compressed zip containing raw files, i.e. starting point of project 
+│── ├── ├──📦 fcsdata                              # Contains all FCS files imported from directly FlowJo
+│── ├── ├──📦 fcsdata_photo                        # Contains gated phototrophs CSV files imported directly from FlowJo
+│── ├── ├──📦 gates                                # Contains CSV files for phototrophs, Syn, Crypto, Nano1/2 and PEuk1/2
+│── ├── ├──📦 phototrophs                          # Cotains CSV phototroph files
 │── 🖥️ sklearn-env                                 # Virtual environment containing dependencies and installed packages  
 │── 📂 work_data                                   # Contains processed datasets (main output folder)
 │── ├── ├──📂 annotated_data                       # Output of make_annotated_data.py
@@ -131,6 +131,7 @@ Pathlib, OS, Joblib, Shutil, Re, Random, Warnings
 │── ├── ├──📂 UMAP_test_data                       # Outputs of test_make_UMAP_minDist.py and test_make_UMAP_ncomp.py
 │── ├── ├──📂 working_data_standardized            # Output of make_standardized_data.py
 │── ├── ├──📂 working_preprocessed_data            # Manually selected CSV files for processing copied from raw_data/phototrophs
+│── 📖 .gitignore                                  # List of files and directories not pushed to github
 │── 📖 README.md                                   # This README.md file
 │── 📖 requirements.txt                            # For library installation    (pip install -r requirements.txt )      
 ```
@@ -141,7 +142,10 @@ Pathlib, OS, Joblib, Shutil, Re, Random, Warnings
 ### Main Pipeline:
 This is the order of files ran to get the study's results, and thus it is recommended that the user follows this order to replicate the results (note the split_data script randomizes the file allocation, thus results of supervised models will vary):
 
+To get raw data download zip file from https://drive.google.com/file/d/1KpIMXzTEW8gkBzk6JW8IX5HNfB83_9GM/view?usp=drive_link
 First run 'pip install -r requirements.txt' to install all dependencies from requirements.txt
+
+Run scripts from All_Scripts directory in the follwing order:
 
 1. ⚙️ make_annotated_data.py
 2. ⚙️ make_annotated_data_with_noise.py
@@ -172,9 +176,8 @@ First run 'pip install -r requirements.txt' to install all dependencies from req
 27. ⚙️ train+run_RF.py
 28. ⚙️ train+run_XGB.py
 
-#All the neccessary output files can be found in associated directories under the work_data directory
-#To visualize the output files on plots corresponding 📊viz.py should be run
-#To evaluate the output results the corresponding 📈stat.py should be run
+All the neccessary output files can be found in associated directories under the work_data directory#To visualize the output files on plots corresponding 📊viz.py should be run
+To evaluate the output results the corresponding 📈stat.py should be run
 
 
 
