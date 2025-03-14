@@ -183,5 +183,4 @@ First run 'pip install -r requirements.txt' to install all dependencies from req
 ## Credits
 This project was conducted as part of my undergraduate thesis in Marine Science at the University of Galway.
 
-It was developed using scikit-learn for machine learning implementations and refined with debugging assistance from Stack Overflow and ChatGPT."# 4th_Year_Project" 
-"# 4th_Year_Project" 
+It was developed using scikit-learn for machine learning implementations and refined with debugging assistance from Stack Overflow and ChatGPT.
