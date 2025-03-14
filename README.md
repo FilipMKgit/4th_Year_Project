@@ -13,7 +13,8 @@ This project applies machine learning techniques to pico- and nano-plankton flow
 Dimensionality reduction (PCA, t-SNE, UMAP), unsupervised clustering (HDBSCAN, KMeans, GMM), and supervised classification (CNN, LDA, RF and XGB) 
 were used to analyze plankton communities. The dataset consists of annotated and unannotated cytometry results. 
 This repository contains all scripts necessary to preprocess, analyze, and visualize the data.
-
+Raw data zip can be downloaded from
+https://drive.google.com/file/d/1KpIMXzTEW8gkBzk6JW8IX5HNfB83_9GM/view?usp=drive_link
 
 
 
@@ -142,8 +143,9 @@ Pathlib, OS, Joblib, Shutil, Re, Random, Warnings
 ### Main Pipeline:
 This is the order of files ran to get the study's results, and thus it is recommended that the user follows this order to replicate the results (note the split_data script randomizes the file allocation, thus results of supervised models will vary):
 
-To get raw data download zip file from https://drive.google.com/file/d/1KpIMXzTEW8gkBzk6JW8IX5HNfB83_9GM/view?usp=drive_link
-First run 'pip install -r requirements.txt' to install all dependencies from requirements.txt
+Download raw data zip and unzip into the working directory
+
+Run 'pip install -r requirements.txt' to install all dependencies from requirements.txt
 
 Run scripts from All_Scripts directory in the follwing order:
 
